@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.Navbar--container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 80vw;
+    padding-top: 50px;
+}
+
+.Navbar--logo {
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.Navbar--li ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.Navbar--li li {
+    font-weight: 600;
+    margin: 15px;
+    color: var(--White);
+    cursor: pointer;
+    position: relative;
+}
+
+.Navbar--li li::after {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 1%;
+    width: 0;
+    height: 2px;
+    background-color: var(--White);
+    transition: width 0.4s ease;
+}
+
+.Navbar--li li:hover::after {
+    width: 100%;
+}
