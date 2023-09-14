@@ -7,10 +7,14 @@ function Header() {
     return (
         <div className="Header--container">
             <NavBar />
-            <div className="Header--title">
-                <h1>Immersive experiences that deliver</h1>
+            <div className="Header--box">
+                <div className="Header--title">
+                    <h1>Immersive experiences that deliver</h1>
+                </div>
+                <div className="Header--noBlock">
+                
+                </div>
             </div>
-            <div className="Header--noBlock"></div>
         </div>
     )
 }

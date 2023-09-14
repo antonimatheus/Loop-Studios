@@ -32,10 +32,10 @@
     position: absolute;
     top: 120%;
     left: 1%;
-    width: 0;
+    width: 0%;
     height: 2px;
     background-color: var(--White);
-    transition: width 0.4s ease;
+    transition: 0.4s ease;
 }
 
 .Navbar--li li:hover::after {
