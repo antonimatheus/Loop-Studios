@@ -1,6 +1,6 @@
 import React from "react";
 import "./Creations.css"
-import I from "./Imgs";
+import data from "./Imgs";
 
 function Creations() {
     return (
@@ -14,7 +14,7 @@ function Creations() {
                 </div>
             </div>
             <div className="Creations--images">
-                {I.map((item, index) => (
+                {data.map((item, index) => (
                 <div className="Creations--imgs" key={index} style={{ backgroundImage: `URL(${item.img})`}}>
                     <h2>{item.title}</h2>
                 </div>
