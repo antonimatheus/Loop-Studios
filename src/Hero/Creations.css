@@ -62,18 +62,19 @@
     padding: 35px;
     background-size: cover;
     width: 23%;
-    height: 80%;
+    height: 70%;
 }
 
 .Creations--imgs img{
     display: flex;
     width: 100%;
+    
 }   
 
 .Creations--imgs h2 {
     display: flex;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 2.5vw;
     font-weight: 400;
     color: var(--White);
 }
