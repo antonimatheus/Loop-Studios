@@ -1,6 +1,6 @@
 import React from "react";
 import "./Creations.css"
-import data from "./Imgs";
+import data from "./Data";
 
 function Creations() {
     return (
