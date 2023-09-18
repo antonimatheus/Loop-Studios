@@ -6,7 +6,6 @@
     width: 80vw;
     height: 100vh;
     margin: 0 auto;
-    background-color: red;
     margin-top: 60px;
 }
 
@@ -43,13 +42,20 @@
     font-weight: 600;
     border: 1px solid black;
     background-color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Creations--seeAll input:hover {
+    border: none;
+    color: var(--White);
+    background-color: var(--Black);
 }
 
 .Creations--images {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: green;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -62,6 +68,14 @@
     margin-top: 40px;
     padding: 35px;
     background-size: cover;
+    background-image: URL(${item.img});
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Creations--imgs:hover {
+    opacity: .3;
+    color: black;1
 }
 
 .Creations--imgs img {
