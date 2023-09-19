@@ -27,7 +27,7 @@
 }
 
 .Header--title h1 {
-    font-size: 70px;
+    font-size: 5vw;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--White);

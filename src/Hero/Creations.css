@@ -66,7 +66,6 @@
     width: 23%;
     height: 70%;
     margin-top: 40px;
-    padding: 35px;
     background-size: cover;
     background-image: URL(${item.img});
     cursor: pointer;
@@ -74,8 +73,8 @@
 }
 
 .Creations--imgs:hover {
-    opacity: .3;
-    color: black;1
+    opacity: .6;
+    color: black; /*Error to change the text color */
 }
 
 .Creations--imgs img {
@@ -85,7 +84,16 @@
 .Creations--imgs h2 {
     display: flex;
     text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    padding: 35px;
     font-size: 2.5vw;
     font-weight: 400;
+    align-items: flex-end;
     color: var(--White);
+    transition: .4s;
+}
+
+.Creations--imgs h2:hover {
+    color: grey;
 }
