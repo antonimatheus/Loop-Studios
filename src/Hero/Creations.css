@@ -66,15 +66,17 @@
     width: 23%;
     height: 70%;
     margin-top: 40px;
-    background-size: cover;
     background-image: URL(${item.img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.9);
     cursor: pointer;
     transition: .4s;
 }
 
 .Creations--imgs:hover {
     opacity: .6;
-    color: black; /*Error to change the text color */
+    background-position: center;
 }
 
 .Creations--imgs img {
@@ -95,5 +97,5 @@
 }
 
 .Creations--imgs h2:hover {
-    color: grey;
+    color: rgb(59, 0, 59);
 }

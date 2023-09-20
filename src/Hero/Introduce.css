@@ -36,17 +36,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 630px;
-    height: 430px;
+    width: 50%;
+    height: 60%;
     background-color: white;
     gap: 25px;
 }
 
 .Introduce--title {
     display: flex;
-    width: 500px;
+    width: 100%;
     font-family: var(--Josefin);
-    font-size: 29px;
+    font-size: 1.8vw;
     text-transform: uppercase;
     text-align: center;
 }
@@ -57,7 +57,7 @@
 
 .Introduce--text {
     display: flex;
-    width: 480px;
+    width: 76%;
     font-family: var(--Alata);
     font-size: 16px;
     line-height: 25px;

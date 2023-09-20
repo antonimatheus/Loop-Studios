@@ -16,7 +16,7 @@ function Creations() {
             <div className="Creations--images">
                 {data.map((item, index) => (
                 <div className="Creations--imgs" key={index} style={{ backgroundImage: `URL(${item.img})`}}>
-                    <h2>{item.title}</h2>
+                        <h2>{item.title}</h2>
                 </div>
                 ))}
             </div>
