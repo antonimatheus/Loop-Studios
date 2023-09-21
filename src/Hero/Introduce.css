@@ -12,6 +12,7 @@
 
 .Introduce--img1 {
     display: flex;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 32%;
@@ -19,18 +20,18 @@
 }
 
 .Introduce--img1 img {
-    width: 630px;
+    width: 100%
 }
 
 .Introduce--img2 {
     display: none;
 }
 
-.Introduce--box {
+.Introduce--box1 {
     display: flex;
     display: flex;
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 68%;
     transform: translate(-50%,-50%);
     flex-direction: column;
@@ -40,6 +41,10 @@
     height: 60%;
     background-color: white;
     gap: 25px;
+}
+
+.Introduce--box2 {
+    display: none;
 }
 
 .Introduce--title {
@@ -63,4 +68,54 @@
     line-height: 25px;
     text-align: left;
     color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:980px) {
+
+    .Introduce--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Introduce--img1 {
+        display: none;
+    }
+
+    .Introduce--img2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .Introduce--img2 img {
+        width: 90%;
+    }
+
+    .Introduce--box1 {
+        display: none;
+    }
+
+    .Introduce--box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .Introduce--title {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .Introduce--text {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    
 }

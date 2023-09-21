@@ -6,7 +6,6 @@
     height: 25vh;
     justify-content: space-around;
     background-color: var(--Black);
-    margin-top: 450px;
 }
 
 .Footer--nav {
@@ -95,4 +94,67 @@
 .Footer--rights p {
     font-family: var(--Alata);
     color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width:950px) {
+    .Footer--container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .Footer--nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        gap: 40px;
+    }
+
+    .Footer--nav li {
+        margin: 0;
+    }
+    
+    .Footer--media {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .Footer--logo {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Footer--logo img {
+        width: 150px;
+    }
+    
+    .Footer--li ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Footer--media {
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .Footer--social li {
+        align-items: center;
+        margin: 10px;
+    }
+
+    .Footer--social  ul {
+        align-items: center;
+    }
+
 }
