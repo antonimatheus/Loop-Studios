@@ -137,6 +137,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 18px;
         gap: 30px;
     }
 
@@ -151,6 +152,10 @@
     .Footer--social li {
         align-items: center;
         margin: 10px;
+    }
+
+    .Footer--social li img {
+        width: 25px;
     }
 
     .Footer--social  ul {
