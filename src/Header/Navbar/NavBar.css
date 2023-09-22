@@ -30,7 +30,7 @@
 .Navbar--li li::after {
     content: '';
     position: absolute;
-    top: 120%;
+    top: 150%;
     left: 1%;
     width: 0%;
     height: 2px;
