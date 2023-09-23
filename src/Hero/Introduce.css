@@ -70,7 +70,7 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:950px) {
 
     .Introduce--container {
         display: flex;

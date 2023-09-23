@@ -130,14 +130,14 @@
     }
 
     .Footer--logo img {
-        width: 150px;
+        width: 30vw;
     }
     
     .Footer--li ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 18px;
+        font-size: 3vw;
         gap: 30px;
     }
 
@@ -155,11 +155,15 @@
     }
 
     .Footer--social li img {
-        width: 25px;
+        width: 4vw;
     }
 
     .Footer--social  ul {
         align-items: center;
+    }
+
+    .Footer--rights p {
+        font-size: 3vw;
     }
 
 }
