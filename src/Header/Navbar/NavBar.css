@@ -3,9 +3,10 @@
 .Navbar--container {
     display: flex;
     margin: 0 auto;
+    justify-content: center;
     align-items: center;
     width: 80vw;
-    padding-top: 50px;
+    height: 20%;
 }
 
 .Navbar--logo {
@@ -40,4 +41,10 @@
 
 .Navbar--li li:hover::after {
     width: 100%;
+}
+
+@media screen and (max-width:950px) {
+    .Navbar--logo {
+        width: 190px;
+    }
 }

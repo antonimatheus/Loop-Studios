@@ -63,6 +63,13 @@
     width: 100%;
 }
 
+.Footer--mediaBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .Footer--social ul {
     display: flex;
     list-style-type: none;
@@ -101,15 +108,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         height: 100vh;
     }
 
     .Footer--nav {
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+        width: 100%;
         height: 50%;
-        gap: 40px;
     }
 
     .Footer--nav li {
@@ -117,10 +125,11 @@
     }
     
     .Footer--media {
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+        width: 100%;
         height: 100%;
+        gap: 40px;
     }
 
     .Footer--logo {
@@ -130,21 +139,29 @@
     }
 
     .Footer--logo img {
-        width: 30vw;
+        width: 180px;
     }
     
     .Footer--li ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 3vw;
+        font-size: 18px;
         gap: 30px;
     }
 
     .Footer--media {
         width: 100%;
         height: 20%;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .Footer--mediaBlock {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 40px;
     }
@@ -155,7 +172,7 @@
     }
 
     .Footer--social li img {
-        width: 4vw;
+        max-width: 8vw;
     }
 
     .Footer--social  ul {
@@ -163,7 +180,7 @@
     }
 
     .Footer--rights p {
-        font-size: 3vw;
+        font-size: 15px;
     }
 
 }

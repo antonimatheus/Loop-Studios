@@ -24,17 +24,19 @@ function Footer() {
                 </div>
             </div>
             <div className="Footer--media">
-                <div className="Footer--social">
-                    <ul>
-                        <li><img src={facebook} alt="icon_facebook" /></li>
-                        <li><img src={twitter} alt="icon_twitter" /></li>
-                        <li><img src={pinterest} alt="icon_pinterest" /></li>
-                        <li><img src={instagram} alt="icon_instagram" /></li>
-                        
-                    </ul>
-                </div>
-                <div className="Footer--rights">
-                    <p>© 2023 Loopstudios. All rights reserved.</p>
+                <div className="Footer--mediaBlock">
+                    <div className="Footer--social">
+                        <ul>
+                            <li><img src={facebook} alt="icon_facebook" /></li>
+                            <li><img src={twitter} alt="icon_twitter" /></li>
+                            <li><img src={pinterest} alt="icon_pinterest" /></li>
+                            <li><img src={instagram} alt="icon_instagram" /></li>
+                    
+                        </ul>
+                    </div>
+                    <div className="Footer--rights">
+                        <p>© 2023 Loopstudios. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
