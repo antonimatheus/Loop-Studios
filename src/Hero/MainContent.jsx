@@ -1,10 +1,11 @@
 import React from "react";
+import "./MainContent.css"
 import Introduce from "./Introduce";
 import Creations from "./Creations";
 
 function MainContent() {
     return (
-    <main>
+    <main className="MainContent--container">
         <Introduce />
         <Creations />
     </main>
