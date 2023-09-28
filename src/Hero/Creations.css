@@ -59,10 +59,12 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     flex-flow: wrap;
     gap: 10px;
-    background-color: red;
+}
+
+.Creations--imgs2 {
+    display: none;
 }
 
 .Creations--imgs {
@@ -75,7 +77,6 @@
     filter: brightness(.9);
     cursor: pointer;
     transition: .4s;
-    
 }
 
 .Creations--imgs:hover {
@@ -102,4 +103,103 @@
 
 @media screen and (max-width:950px) {
 
+    .Creations--container {
+        flex-direction: column;
+        background-color: red;
+    }
+
+    .Creations--box {
+        display: flex;
+        width: 100%;
+        height: 10%;
+    }
+
+    .Creations--title {
+        display: flex;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 3.1vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Creations--title h1 {
+        font-weight: 400;
+    }
+
+    .Creations--seeAll {
+        display: none;
+    }
+
+    
+    .Creations--images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        flex-flow: wrap;
+        gap: 10px;
+        background-color: blue;
+    }
+    
+    .Creations--imgs {
+        display: none;
+    }
+    
+    .Creations--imgs2 {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: brightness(.9);
+        cursor: pointer;
+        transition: .4s;
+        
+    }
+    
+    .Creations--imgs2:hover {
+        opacity: .6;
+        background-position: center;
+    }
+    
+    .Creations--imgs2 h2 {
+        display: flex;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        padding: 35px;
+        font-size: 5.5vw;
+        font-weight: 400;
+        align-items: flex-end;
+        color: var(--White);
+        transition: .4s;
+    }
+
+    .Creations--imgs2:hover {
+        opacity: .6;
+        background-position: center;
+    }
+    
+    .Creations--imgs2 h2 {
+        display: flex;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        padding: 35px;
+        font-size: 2.5vw;
+        font-weight: 400;
+        align-items: flex-end;
+        color: var(--White);
+        transition: .4s;
+    }
+    
+    .Creations--imgs2 h2:hover {
+        color: var(--VeryDarkGray);
+    }
+    
 }
