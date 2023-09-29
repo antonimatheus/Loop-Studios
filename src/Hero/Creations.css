@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    margin: 60px 0px 460px 0px;
+    height: 200vh;
+    margin: 60px 0px 60px 0px;
     gap: 50px;
 }
 
@@ -17,7 +17,7 @@
 
 .Creations--title {
     display: flex;
-    width: 50vw;
+    width: 50%;
     text-transform: uppercase;
     font-size: 2.1vw;
     justify-content: flex-start;
@@ -30,9 +30,13 @@
 
 .Creations--seeAll {
     display: flex;
-    width: 50vw;
+    width: 50%;
     justify-content: flex-end;
     align-items: center;
+}
+
+.Creations--seeAll2 {
+    display: none;
 }
 
 .Creations--seeAll input {
@@ -60,7 +64,7 @@
     width: 100%;
     height: 100vh;
     flex-flow: wrap;
-    gap: 10px;
+    gap: 25px;
 }
 
 .Creations--imgs2 {
@@ -70,7 +74,7 @@
 .Creations--imgs {
     display: flex;
     align-items: flex-end;
-    width: 24%;
+    width: 23%;
     height: 80%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,11 +105,13 @@
     color: var(--VeryDarkGray);
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1180px) {
 
     .Creations--container {
+        width: 100%;
+        height: 325vh;
         flex-direction: column;
-        background-color: red;
+        margin: 60px 0px 60px 0px;
     }
 
     .Creations--box {
@@ -118,20 +124,44 @@
         display: flex;
         width: 100%;
         text-transform: uppercase;
-        font-size: 3.1vw;
+        font-size: 4.5vw;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
 
     .Creations--title h1 {
+        text-align: center;
         font-weight: 400;
     }
-
+    
+    .Creations--seeAll2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .Creations--seeAll {
         display: none;
     }
 
+    .Creations--seeAll2 input {
+        width: 35%;
+        height: 45px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+        transition: .4s;
+    }
     
+    .Creations--seeAll2 input:hover {
+        border: none;
+        color: var(--White);
+        background-color: var(--Black);
+    }
+
     .Creations--images {
         display: flex;
         flex-direction: column;
@@ -140,8 +170,7 @@
         width: 100%;
         height: 100vh;
         flex-flow: wrap;
-        gap: 10px;
-        background-color: blue;
+        gap: 45px;
     }
     
     .Creations--imgs {
@@ -152,32 +181,18 @@
         display: flex;
         align-items: flex-end;
         width: 100%;
-        height: 50%;
-        background-size: contain;
+        height: 30%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right ;
         filter: brightness(.9);
         cursor: pointer;
         transition: .4s;
-        
     }
     
     .Creations--imgs2:hover {
         opacity: .6;
         background-position: center;
-    }
-    
-    .Creations--imgs2 h2 {
-        display: flex;
-        text-transform: uppercase;
-        width: 100%;
-        height: 100%;
-        padding: 35px;
-        font-size: 5.5vw;
-        font-weight: 400;
-        align-items: flex-end;
-        color: var(--White);
-        transition: .4s;
     }
 
     .Creations--imgs2:hover {
@@ -188,10 +203,10 @@
     .Creations--imgs2 h2 {
         display: flex;
         text-transform: uppercase;
-        width: 100%;
+        width: 50%;
         height: 100%;
         padding: 35px;
-        font-size: 2.5vw;
+        font-size: 4vw;
         font-weight: 400;
         align-items: flex-end;
         color: var(--White);
@@ -201,5 +216,10 @@
     .Creations--imgs2 h2:hover {
         color: var(--VeryDarkGray);
     }
-    
+}
+
+@media screen and (max-width:950px) {
+    .Creations--imgs2 h2 {
+        font-size: 7vw;
+    }
 }

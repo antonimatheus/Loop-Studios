@@ -7,3 +7,9 @@
     margin: auto;
     width: 80vw;
 }
+
+@media screen and (max-width:950px){
+    .MainContent--container {
+        width: 90vw;
+    }
+}

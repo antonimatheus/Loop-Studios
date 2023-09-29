@@ -25,8 +25,11 @@ function Creations() {
                         <h2>{item.title}</h2>
                 </div>
                 ))}
-
+                <div className="Creations--seeAll2">
+                    <input type="button" value="See All" />
+                </div>
             </div>
+            
         </main>
     )
 }
