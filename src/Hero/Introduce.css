@@ -29,14 +29,13 @@
 
 .Introduce--box1 {
     display: flex;
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 70%;
     left: 68%;
     transform: translate(-50%,-50%);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 50%;
     height: 60%;
     background-color: white;
@@ -52,8 +51,8 @@
     width: 100%;
     font-family: var(--Josefin);
     font-size: 1.8vw;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .Introduce--title h1 {
@@ -65,8 +64,8 @@
     width: 76%;
     font-family: var(--Alata);
     font-size: 16px;
-    line-height: 25px;
     text-align: left;
+    line-height: 25px;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -116,6 +115,4 @@
         text-align: center;
         margin-top: 20px;
     }
-    
-    
 }

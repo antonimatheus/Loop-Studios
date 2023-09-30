@@ -14,17 +14,27 @@ function Creations() {
                     <input type="button" value="See All" />
                 </div>
             </div>
+            
             <div className="Creations--images">
-                {data.map((item, index) => (
-                <div className="Creations--imgs" key={index} style={{ backgroundImage: `URL(${item.img})`}}>
-                        <h2>{item.title}</h2>
+            {data.map((item, index) => (
+                <div
+                className="Creations--imgs" key={index}
+                style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${item.img})`
+                }}>
+                    <h2>{item.title}</h2>
                 </div>
-                ))}
-                {data2.map((item, index) => (
-                <div className="Creations--imgs2" key={index} style={{ backgroundImage: `URL(${item.img})`}}>
-                        <h2>{item.title}</h2>
+            ))}
+            {data2.map((item, index) => (
+                <div
+                className="Creations--imgs2" key={index}
+                style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${item.img})`
+                }}>
+                    <h2>{item.title}</h2>
                 </div>
-                ))}
+            ))}
+
                 <div className="Creations--seeAll2">
                     <input type="button" value="See All" />
                 </div>

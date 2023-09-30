@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: flex-end;
     width: 35vw;
-    gap: 20px   ;
+    gap: 20px;
 }
 
 .Footer--logo {
@@ -133,9 +133,9 @@
     }
 
     .Footer--logo {
-        width: 100%;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .Footer--logo img {
@@ -151,10 +151,10 @@
     }
 
     .Footer--media {
-        width: 100%;
-        height: 20%;
         justify-content: flex-start;
         align-items: center;
+        width: 100%;
+        height: 20%;
         margin-top: 40px;
         gap: 40px;
     }
@@ -182,5 +182,4 @@
     .Footer--rights p {
         font-size: 15px;
     }
-
 }
