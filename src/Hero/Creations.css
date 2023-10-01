@@ -124,7 +124,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        font-size: 4.5vw;
+        font-size: 3vw;
         text-transform: uppercase;
         width: 100%;
     }
@@ -214,6 +214,11 @@
 }
 
 @media screen and (max-width:950px) {
+
+    .Creations--title {
+        font-size: 4vw;
+    }
+
     .Creations--imgs2 h2 {
         font-size: 5vw;
     }

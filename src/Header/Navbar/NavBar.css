@@ -13,6 +13,11 @@
     display: flex;
     margin-right: auto;
     cursor: pointer;
+    z-index: 3;
+}
+
+.Navbar--liBurger {
+    display: none;
 }
 
 .Navbar--li ul {
@@ -43,6 +48,23 @@
     width: 100%;
 }
 
+.Navbar--ulBurger ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar--liBurger li {
+    font-family: var(--Josefin);
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 15px;
+    color: var(--White);
+    cursor: pointer;
+    position: relative;
+}
+
 @media screen and (max-width:950px) {
     .Navbar--logo img {
         width: 30vw;
@@ -52,4 +74,31 @@
         display: none;
     }
     
+    .Navbar--liBurger .Navbar--li {
+        display: flex;
+    }
+
+    .Navbar--liBurger {
+        display: flex;
+    }
+
+    .Navbar--iconBurger { /*------------------------------------------------*/
+        z-index: 3;
+    }
+
+    .Navbar--ulBurger {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        list-style-type: none;
+        font-weight: 400;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
 }
