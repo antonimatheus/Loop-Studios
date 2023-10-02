@@ -2,11 +2,11 @@
 
 .Navbar--container {
     display: flex;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     width: 80%;
     height: 20%;
+    margin: 0 auto;
 }
 
 .Navbar--logo {
@@ -26,11 +26,11 @@
 }
 
 .Navbar--li li {
+    position: relative;
     font-weight: 600;
     margin: 15px;
     color: var(--White);
     cursor: pointer;
-    position: relative;
 }
 
 .Navbar--li li::after {
@@ -54,6 +54,7 @@
 }
 
 .Navbar--liBurger li {
+    position: relative;
     font-family: var(--Josefin);
     font-size: 25px;
     font-weight: 300;
@@ -62,7 +63,21 @@
     margin: 15px;
     color: var(--White);
     cursor: pointer;
-    position: relative;
+}
+
+.Navbar--ulBurger li::after {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 1%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--White);
+    transition: 0.4s ease;
+}
+
+.Navbar--ulBurger li:hover::after {
+    width: 100%;
 }
 
 @media screen and (max-width:950px) {
@@ -78,27 +93,27 @@
         display: flex;
     }
 
-    .Navbar--liBurger {
-        display: flex;
+    .Navbar--iconBurger {
+        z-index: 3;
+        cursor: pointer;
     }
 
-    .Navbar--iconBurger { /*------------------------------------------------*/
-        z-index: 3;
+    .Navbar--liBurger {
+        display: flex;
     }
 
     .Navbar--ulBurger {
         display: flex;
         align-items: center;
-        padding: 40px;
         list-style-type: none;
         font-weight: 400;
-        background-color: black;
         width: 100%;
         height: 100vh;
+        padding: 40px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        background-color: black;
     }
-
 }

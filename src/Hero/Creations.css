@@ -102,7 +102,7 @@
 }
 
 .Creations--imgs h2:hover {
-    color:rgb(87, 0, 87);
+    color: var(--VeryDarkGray);
 }
 
 @media screen and (max-width:1180px) {
@@ -192,7 +192,6 @@
     
     .Creations--imgs2:hover {
         opacity: .6;
-        background-position: center;
     }
     
     .Creations--imgs2 h2 {
@@ -209,7 +208,7 @@
     }
     
     .Creations--imgs2 h2:hover {
-        color:rgb(87, 0, 87);
+        color: var(--VeryDarkGray);
     }
 }
 
