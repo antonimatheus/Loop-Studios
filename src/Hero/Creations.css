@@ -78,7 +78,7 @@
     height: 68vh;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(.8);
+    filter: brightness(1);
     cursor: pointer;
     transition: .4s;
 }
@@ -185,7 +185,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top ;
-        filter: brightness(.9);
+        filter: brightness(1);
         cursor: pointer;
         transition: .4s;
     }
