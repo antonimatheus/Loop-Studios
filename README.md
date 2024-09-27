@@ -4,7 +4,7 @@
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://sunnysidelandingpage-am.netlify.app/
 
-<h1 align="center" style="font-weight: bold;">Loop Studios💻</h1>
+<h1 align="center" style="font-weight: bold;">Loop Studios 🥽</h1>
 
 ![react][REACT__BADGE]
 ![vue][VUE__BADGE]
