@@ -61,7 +61,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-flow: wrap ;
+    flex-flow: wrap;
     width: 100%;
     height: 100%;
     gap: 25px;
@@ -72,23 +72,48 @@
 }
 
 .Creations--imgs {
+    position: relative;
     display: flex;
     align-items: flex-end;
     width: 23%;
     height: 68vh;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(1);
+    filter: brightness(1); /* O brilho padrão da imagem */
     cursor: pointer;
     transition: .4s;
 }
 
+.Creations--imgs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparente inicialmente */
+    transition: background-color 0.4s ease;
+    z-index: 1; /* Certifica-se de que a camada está sobre a imagem */
+}
+
+.Creations--imgs:hover::before {
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece ao passar o mouse */
+}
+
 .Creations--imgs:hover {
-    opacity: .6;
-    background-position: center;
+    filter: brightness(0.9); /* Pequena mudança no brilho */
+}
+
+.Creations--imgs-text {
+    position: absolute;
+    z-index: 2; /* Garante que o texto fique acima da sobreposição */
+    color: white; /* Cor do texto */
+    padding: 10px;
 }
 
 .Creations--imgs h2 {
+    position: relative; /* Importante para garantir que o texto esteja acima do ::before */
+    z-index: 2; /* Garante que o h2 fique sobre a camada escurecida */
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -99,10 +124,6 @@
     text-transform: uppercase;
     color: var(--White);
     transition: .4s;
-}
-
-.Creations--imgs h2:hover {
-    color: var(--VeryDarkGray);
 }
 
 @media screen and (max-width:1180px) {
@@ -167,7 +188,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-flow: wrap ;
         width: 100%;
         height: 100%;
         gap: 25px;
@@ -178,37 +198,58 @@
     }
     
     .Creations--imgs2 {
+        position: relative;
         display: flex;
         align-items: flex-end;
         width: 100%;
         height: 25vh;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top ;
-        filter: brightness(1);
+        filter: brightness(1); /* O brilho padrão da imagem */
         cursor: pointer;
         transition: .4s;
     }
     
+    .Creations--imgs2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0); /* Transparente inicialmente */
+        transition: background-color 0.4s ease;
+        z-index: 1; /* Certifica-se de que a camada está sobre a imagem */
+    }
+    
+    .Creations--imgs2:hover::before {
+        background-color: rgba(0, 0, 0, 0.5); /* Escurece ao passar o mouse */
+    }
+    
     .Creations--imgs2:hover {
-        opacity: .6;
+        filter: brightness(0.9); /* Pequena mudança no brilho */
+    }
+    
+    .Creations--imgs-text2 {
+        position: absolute;
+        z-index: 2; /* Garante que o texto fique acima da sobreposição */
+        color: white; /* Cor do texto */
+        padding: 10px;
     }
     
     .Creations--imgs2 h2 {
+        position: relative; /* Importante para garantir que o texto esteja acima do ::before */
+        z-index: 2; /* Garante que o h2 fique sobre a camada escurecida */
         display: flex;
-        text-transform: uppercase;
         align-items: flex-end;
-        width: 50%;
+        width: 100%;
         height: 100%;
         padding: 35px;
-        font-size: 3vw;
+        font-size: 2.2vw;
         font-weight: 400;
+        text-transform: uppercase;
         color: var(--White);
         transition: .4s;
-    }
-    
-    .Creations--imgs2 h2:hover {
-        color: var(--VeryDarkGray);
     }
 }
 

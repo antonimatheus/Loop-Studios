@@ -26,4 +26,5 @@
 body {
   font-family: var(--Josefin);
   font-size: 15px;
+  background-color: white;
 }

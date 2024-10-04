@@ -6,6 +6,7 @@
     align-items: center;
     margin: auto;
     width: 80vw;
+    background-color: white;
 }
 
 @media screen and (max-width:950px){
