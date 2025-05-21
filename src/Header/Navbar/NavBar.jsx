@@ -1,14 +1,13 @@
 import React from "react";
-import "../Navbar/NavBar.css"
+import "../Navbar/NavBar.css";
 import Burger from "./Burger";
-import logo from "../../assets/images/logo.svg"
+import logo from "../../assets/images/logo.svg";
 
 function NavBar() {
-
     return (
         <div className="Navbar--container">
             <div className="Navbar--logo">
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt="logo" />
             </div>
             <div className="Navbar--li">
                 <ul>
@@ -19,10 +18,9 @@ function NavBar() {
                     <li>Support</li>
                 </ul>
             </div>
-            
             <Burger />
         </div>
-    )
+    );
 }
 
 export default NavBar;
