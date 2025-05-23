@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 
 :root {
   /*Colors*/
@@ -13,8 +13,8 @@
   --VeryDarkGray: hsl(0, 0%, 41%);
 
   /*Fonts*/
-  --Alata: 'Alata', sans-serif;  /*Weight: 400*/
-  --Josefin: 'Josefin Sans', sans-serif;  /*Weight: 300*/
+  --Alata: "Alata", sans-serif; /*Weight: 400*/
+  --Josefin: "Josefin Sans", sans-serif; /*Weight: 300*/
 }
 
 * {
@@ -27,4 +27,8 @@ body {
   font-family: var(--Josefin);
   font-size: 15px;
   background-color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge e Safari */
 }
